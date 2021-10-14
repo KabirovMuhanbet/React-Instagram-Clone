@@ -1,0 +1,16 @@
+@import "./properties";
+
+
+.menu{
+   display: flex;
+   align-items: center;
+   .menuIcon {
+      margin-right: 24px;
+      width: 23px;
+      height: 23px;
+      &:hover{
+         cursor: pointer;
+         fill: $gradient-two;
+      }
+   }
+}

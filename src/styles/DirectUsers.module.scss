@@ -1,0 +1,54 @@
+@import "./properties";
+
+
+.directUsers{
+   font-family: $font;
+   width: 350px;
+   border-right: 1px solid $border-color-grey;
+   .changeAccount{
+      display: flex;
+      border-bottom: 1px solid $border-color-grey;
+      padding: 20px;
+      .accountBtn{
+         padding: 0;
+         background-color: transparent;
+         border: none;
+         display: flex;
+         align-items: center;
+         color: $font-color-primary;
+         font-weight: 600;
+         margin: 0 auto;
+         cursor: pointer;
+         font-family: $font;
+         font-size: 16px;
+         .accountName{
+            margin-right: 10px;
+         }
+      }
+      .messagesBtn{
+         padding: 0;
+         background-color: transparent;
+         border: none;
+         cursor: pointer;
+      }
+   }
+   .changeMessages{
+      display: flex;
+      border-bottom: 1px solid $border-color-grey;
+      .filterBtn{
+         display: inline-block;
+         color: $font-color-primary;
+         font-weight: 600;
+         font-size: 18px;
+         padding: 12px;
+         &.active{
+            border-bottom: 1px solid $font-color-primary;
+         }
+      }
+   }
+   .users{
+      padding: 5px 12px 0;
+      height: 100%;
+      overflow-y: scroll;
+   }
+}

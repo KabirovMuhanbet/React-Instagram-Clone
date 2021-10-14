@@ -1,0 +1,87 @@
+@import "./properties";
+
+
+.cardsItem {
+   border: 1px solid $border-color-grey;
+   background-color: $background-white;
+   margin-bottom: 20px;
+   .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px 0;
+      .button {
+         padding: 0;
+         border: none;
+         background-color: transparent;
+         cursor: pointer;
+      }
+   }
+   .cardImage {
+      width: 100%;
+      display: block;
+   }
+   .likedBy{
+      display: flex;
+      padding-left: 16px;
+      .likers{
+         font-size: 14px;
+         margin-left: 8px;
+         padding-top: 8px;
+      }
+   }
+   .comments{
+      margin-bottom: 14px;
+   }
+   .timePosted{
+      font-size: 12px;
+      color: $font-color-secondary;
+      padding-left: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid $border-color-grey-secondary;
+   }
+   .addComment{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 16px;
+      .smile{
+         cursor: pointer;
+         margin-right: 10px;
+      }
+      .commentText{
+         font-family: $font;
+         width: 100%;
+         border: none;
+         outline: none;
+         &::placeholder{
+            font-family: $font;
+            font-weight: 500;
+            color: $font-color-secondary;
+         }
+      }
+      .postBtn{
+         font-family: $font;
+         font-weight: 600;
+         padding: 0;
+         background-color: transparent;
+         border: none;
+         color: $link-color;
+         cursor: pointer;
+      }
+   }
+}
+
+@media only screen and (max-width: 640px) {
+   .cardsItem{
+      border: none;
+      background-color: $background-grey;
+      margin-bottom: 14px;
+      .timePosted{
+         border: none;
+      }
+      .addComment{
+         display: none;
+      }
+   }
+}

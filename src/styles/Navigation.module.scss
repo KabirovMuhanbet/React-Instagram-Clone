@@ -1,0 +1,70 @@
+@import "./properties";
+
+.navigation {
+   position: fixed;
+   top: 0;
+   z-index: 2;
+   background-color: $background-white;
+   width: 100%;
+   border-bottom: 1px solid $border-color-grey;
+   .container {
+      padding: 16px 0 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 975px;
+      margin: 0 auto;
+      .logo {
+         width: 100px;
+         &:hover {
+            cursor: pointer;
+         }
+      }
+      .search {
+         position: relative;
+         width: 215px;
+         .searchIcon {
+            position: absolute;
+            left: 70px;
+            top: 7px;
+            width: 16px;
+            opacity: 0.4;
+         }
+         .cancelIcon{
+            position: absolute;
+            right: 6px;
+            top: 7px;
+            width: 16px;
+            opacity: 0.4;
+            display: none;
+         }
+         .searchInput {
+            padding: 6px 10px 6px 26px;
+            text-align: center;
+            font-family: $font;
+            border-radius: 5px;
+            color: $font-color-secondary;
+            font-size: 14px;
+            font-weight: 300;
+            border: 1px solid $border-color-grey;
+            background-color: $background-grey;
+            outline: none;
+         }
+         .searchInput:focus{
+            text-align: left;
+         }
+         .searchInput:focus + .searchIcon{
+            display: none;
+         }
+         .searchInput:focus + .searchIcon + .cancelIcon{
+            display: block;
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 500px) {
+   .search {
+      display: none !important;
+   }
+}

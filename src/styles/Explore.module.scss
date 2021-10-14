@@ -1,0 +1,14 @@
+
+.explore{
+   width: 100%;
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 48px;
+   .exploreItem{
+      max-width: 292px;
+      img {
+         width: 100%;
+      }
+   }
+}

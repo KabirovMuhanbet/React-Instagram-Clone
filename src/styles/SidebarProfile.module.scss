@@ -1,0 +1,22 @@
+@import "./properties";
+
+
+.sidebarProfile{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .link{
+      color: $font-color-primary;
+      font-size: 16px;
+   }
+   .btn{
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      color: $link-color;
+      font-weight: 600;
+      margin-bottom: 14px;
+      cursor: pointer;
+   }
+}

@@ -1,0 +1,13 @@
+.userPosts{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 48px;
+   margin-bottom: 20px;
+   .postsItem{
+      max-width: 292px;
+      img {
+         width: 100%;
+      }
+   }
+}

@@ -1,0 +1,16 @@
+@import "./properties";
+.footer {
+   width: 100%;
+   margin-top: 30px;
+   color: $font-color-footer;
+   .list {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .author{
+      font-size: 14px;
+      text-transform: uppercase;
+   }
+}

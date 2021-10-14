@@ -1,0 +1,32 @@
+@import "./properties";
+
+.profileMenu{
+   width: 100%;
+   border-top: 1px solid $border-color-grey;
+   .profileMenu_list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      .profileMenu_btn{
+         background-color: transparent;
+         border: none;
+         color: $font-color-secondary;
+         margin-right: 60px;
+         padding: 20px 0;
+         cursor: pointer;
+         font-weight: 600;
+         font-size: 16px;
+         &:last-child{
+            margin-right: 0;
+         }
+         span{
+            margin-left: 6px;
+         }
+         &.active{
+            color: $font-color-primary;
+            border-top: 1px solid $font-color-primary;
+         }
+      }
+   }
+}

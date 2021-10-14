@@ -1,0 +1,31 @@
+@import "./properties";
+
+.profile{
+   display: flex;
+   align-items: center;
+   margin-bottom: 14px;
+   .textContainer{
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+      .accountName{
+         font-weight: 500;
+         &:hover {
+            cursor: pointer;
+         }
+      }
+      .caption{
+         font-size: 14px;
+         color: $font-color-secondary;
+      }
+   }
+   .profile_btn{
+      text-align: right;
+      background-color: transparent;
+      border: none;
+      color: $link-color;
+      font-family: $font;
+      padding: 0;
+      cursor: pointer;
+   }
+}

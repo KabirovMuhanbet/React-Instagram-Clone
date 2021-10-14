@@ -1,0 +1,21 @@
+.cardsMenu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px;
+   .emotions{
+      display: flex;
+      align-items: center;
+      .icon {
+         width: 23px;
+         height: 23px;
+         margin-right: 16px;
+         &:hover{
+            cursor: pointer;
+         }
+      }
+   }
+   .save_icon{
+      cursor: pointer;
+   }
+}

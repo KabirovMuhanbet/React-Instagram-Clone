@@ -1,0 +1,17 @@
+@import "./properties";
+
+.suggestionsProfile {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .btn {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      color: $link-color;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 14px;
+   }
+}

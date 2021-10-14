@@ -1,0 +1,19 @@
+@import "./properties";
+
+.list_item {
+   &::after{
+      content: '\00B7';
+      margin: 0 4px;
+   }
+   &:last-child::after{
+      content: "";
+   }
+   .link {
+      font-size: 12px;
+      color: $font-color-footer;
+      transition: all .5s;
+      &:hover{
+         color: black;
+      }
+   }
+}

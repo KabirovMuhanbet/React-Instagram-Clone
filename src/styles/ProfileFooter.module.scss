@@ -1,0 +1,26 @@
+@import "./properties";
+
+.profileFooter{
+   margin: 24px 0;
+   .list{
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      a{
+         color: $font-color-footer;
+      }
+   }
+   .copy{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $font-color-footer;
+      width: 40%;
+      margin: 0 auto;
+   }
+}

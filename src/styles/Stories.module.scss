@@ -1,0 +1,46 @@
+@import "./properties";
+
+.stories {
+   position: relative;
+   .scroll {
+      display: flex;
+      align-content: center;
+      background-color: $background-white;
+      border: 1px solid $border-color-grey;
+      border-radius: 3px;
+      margin: 32px 0 24px 0;
+      height: 120px;
+      overflow: hidden;
+   }
+   .scrollBtn {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: $background-white;
+      color: black;
+      border: none;
+      transform: translateY(-50%);
+      -webkit-box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.27);
+      box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.27);
+      cursor: pointer;
+      transition: all .3s;
+      &:hover{
+         opacity: 0.7;
+      }
+   }
+   .scrollBtn_prev {
+      left: 10px;
+      top: 50%;
+   }
+   .scrollBtn_next {
+      right: 10px;
+      top: 50%;
+   }
+}
+
+@media only screen and (max-width: 640px) {
+   .stories {
+      margin: 0 0 8px 0;
+   }
+}
